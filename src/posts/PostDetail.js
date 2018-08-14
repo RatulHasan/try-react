@@ -24,7 +24,7 @@ class PostDetails extends Component {
     toggleShow(event){
         event.preventDefault()
         this.setState({
-            showContent: true
+            showContent: !this.state.showContent
         })
     }
 
@@ -34,8 +34,8 @@ class PostDetails extends Component {
         return (
             <div className="App">
                 <p onClick={this.titleClicked}>{post.title}</p>
-                {showContent === false ? <button onClick={this.toggleShow}> Read more</button> : <button onClick={this.toggleShow}> Less</button> }
-                {showContent === true ? <p>{post.body}</p> : "" }
+                {showContent === !this.showContent ? <button onClick={this.toggleShow}> Less</button> :<button onClick={this.toggleShow}> Read more</button> }
+                {showContent === !this.showContent ? <p>{post.body}</p> : "" }
                 {/*<p className={`${showContent === true ? 'd-block' : 'd-none'}`}>{post.body}</p>*/}
                 <hr />
             </div>
