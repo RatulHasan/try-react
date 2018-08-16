@@ -8,6 +8,7 @@ class ReactYoutubeExample extends Component {
     videoOnReady(event) {
         // access to player in all event handlers via event.target
         event.target.pauseVideo();
+        console.log(event.target)
     }
 
     render() {
