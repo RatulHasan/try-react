@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PostData from '../data/posts.json';
+// import ReactYoutubeExample from '../thirdParty/ReactYoutubeExample'
+import ReactMarkdown from '../thirdParty/ReactMarkdownExample'
 
 import PostDetail from './PostDetail'
 class PostList extends Component {
@@ -15,6 +17,8 @@ class PostList extends Component {
     render() {
         return (
             <div>
+                {/*<ReactYoutubeExample videoId='s4aIk0x5Eus'/>*/}
+                <ReactMarkdown />
                 {PostData.map((postDetail, index) => {
                     return (
                         <PostDetail post={postDetail} key={index} dataCallBack={this.dataCallBack} />
