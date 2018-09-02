@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import PostList from './posts/PostList'
+// import PostList from './posts/PostList'
 // import ReactYoutubeExample from './thirdParty/ReactYoutubeExample'
+import PersonListEmample from './axios/PersonListEmample'
 
 class App extends Component {
   render() {
@@ -13,7 +14,8 @@ class App extends Component {
           {/*<h1 className="App-title">Welcome to React</h1>*/}
             {/*<ReactYoutubeExample videoId='s4aIk0x5Eus'/>*/}
         {/*</header>*/}
-          <PostList/>
+          {/*<PostList/>*/}
+        <PersonListEmample />
       </div>
     );
   }
