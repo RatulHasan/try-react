@@ -11,9 +11,9 @@ class PersonListEmample extends React.Component {
         // https://jsonplaceholder.typicode.com/
         axios.get(`https://jsonplaceholder.typicode.com/users`)
             .then(res => {
-                console.log(persons);
                 const persons = res.data;
                 this.setState({ persons });
+                console.log(persons);
             })
     }
 

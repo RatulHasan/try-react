@@ -4,6 +4,7 @@ import './App.css';
 // import PostList from './posts/PostList'
 // import ReactYoutubeExample from './thirdParty/ReactYoutubeExample'
 import PersonListEmample from './axios/PersonListEmample'
+import PersonPostEmample from './axios/PersonPostExample'
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         {/*</header>*/}
           {/*<PostList/>*/}
         <PersonListEmample />
+        <PersonPostEmample />
       </div>
     );
   }
