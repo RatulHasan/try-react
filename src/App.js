@@ -5,6 +5,7 @@ import './App.css';
 // import ReactYoutubeExample from './thirdParty/ReactYoutubeExample'
 import PersonListEmample from './axios/PersonListEmample'
 import PersonPostEmample from './axios/PersonPostExample'
+import PersonDeleteExample from './axios/PersonDeleteExample'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           {/*<PostList/>*/}
         <PersonListEmample />
         <PersonPostEmample />
+        <PersonDeleteExample />
       </div>
     );
   }
