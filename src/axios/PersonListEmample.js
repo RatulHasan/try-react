@@ -8,7 +8,8 @@ class PersonListEmample extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`https://jsonplaceholder.typicode.com/todos`)
+        // https://jsonplaceholder.typicode.com/
+        axios.get(`https://jsonplaceholder.typicode.com/users`)
             .then(res => {
                 console.log(persons);
                 const persons = res.data;
@@ -19,7 +20,11 @@ class PersonListEmample extends React.Component {
     render() {
         return (
             <div>
-                { this.state.persons.map(person => <p>{person.id}) {person.title}</p>)}
+                { this.state.persons.map(person =>
+                    <p key={person.id}>
+                        {person.id}) {person.username}<br/> ZipCode- {person.address.zipcode}
+                    </p>
+                )}
             </div>
         )
     }
